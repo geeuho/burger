@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var exphbs = require('express-handlebars');
 var parser = require('body-parser');
-var ctrl = require('./controllers/burgers_controller.js');
+var ctrl = require('./controllers/burger_controller.js');
 
 // Sets up the Express App
 // =============================================================
