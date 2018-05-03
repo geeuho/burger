@@ -11,12 +11,13 @@ var orm = {
       cb(result);
     });
   },
-  insertOne: function(table, burger, cb){
+  //need to find out what variables need to be inserted
+  insertOne: function(table, lemonade, cb){
     var queryString = "INSERT INTO " + table + " SET ?";
 
     console.log(queryString);
 
-    connection.query(queryString, [{burger_name: burger, devoured: false}],
+    connection.query(queryString, [{lemonade_name: lemonade, devoured: false}],
       function(err, result){
         if (err){
           throw err;
@@ -24,7 +25,8 @@ var orm = {
         cb(result);
     });
   },
-    updateOne: function(table, devoured, idNum, cb){
+    //need to find out what we need to update
+    updateOne: function(table, idNum, cb){
     var queryString = "UPDATE " + table + " SET ? WHERE ?";
 
     console.log(queryString);

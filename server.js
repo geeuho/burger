@@ -1,7 +1,7 @@
 // =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
+var express = require('express');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
 var parser = require('body-parser');
 var ctrl = require('./controllers/burgers_controller.js');
